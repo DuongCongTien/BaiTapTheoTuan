@@ -1,0 +1,8 @@
+<resources>
+    <style name="Theme.Teal" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">@color/teal_400</item>
+        <item name="colorOnPrimary">@color/black</item> <!-- chú ý dấu / -->
+        <item name="colorPrimaryContainer">@color/teal_800</item>
+        <item name="colorSecondary">@color/teal_200</item>
+    </style>
+</resources>

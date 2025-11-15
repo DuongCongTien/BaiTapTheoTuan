@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="@drawable/gradient_background_animated">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/user_icon"
+        android:layout_marginBottom="24dp"
+        android:scaleType="centerCrop"
+        android:elevation="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:shadowColor="#000000"
+        android:shadowRadius="10"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:layout_marginBottom="40dp" />
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:inputType="text"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/edit_text_rounded_gradient"
+        android:padding="14dp"
+        android:textColor="#000000"
+        android:textColorHint="#B0B0B0"
+        android:textSize="18sp"
+        android:elevation="4dp" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/edit_text_rounded_gradient"
+        android:padding="14dp"
+        android:textColor="#000000"
+        android:textColorHint="#B0B0B0"
+        android:textSize="18sp"
+        android:elevation="4dp" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:background="@drawable/button_rounded_gradient"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:layout_marginBottom="20dp"
+        android:onClick="onLoginClick"
+        android:stateListAnimator="@anim/button_elevation" />
+
+    <Button
+        android:id="@+id/btnCreateAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Account"
+        android:background="@drawable/button_rounded_gradient"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:onClick="onCreateAccountClick"
+        android:stateListAnimator="@anim/button_elevation" />
+
+</LinearLayout>
